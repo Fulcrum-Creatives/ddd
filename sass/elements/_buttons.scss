@@ -9,7 +9,7 @@
   font-weight: bold;
   text-align: center;
   a {
-    background-color: $light-brown;
+    background-color: #f4a790;
     padding: 1em 0;
     width: 100%;
     color: $color__font;
@@ -18,7 +18,7 @@
     transition: background-color 1s ease;
     &:hover {
       transition: background-color 1s ease;
-      background-color: darken( $light-brown, 10% );
+      background-color: darken( #f4a790, 10% );
     }
   }
   &.centered {

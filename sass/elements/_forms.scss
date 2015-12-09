@@ -21,7 +21,7 @@ textarea {
 }
 .gform_wrapper .gform_footer input.button, 
 .gform_wrapper .gform_footer input[type=submit] {
-    background-color: $light-brown;
+    background-color: #f4a790;
     outline: none;
     border: none;
     padding: 1em 0;
@@ -33,6 +33,6 @@ textarea {
     transition: background-color 1s ease;
     &:hover {
       transition: background-color 1s ease;
-      background-color: darken( $light-brown, 10% );
+      background-color: darken( #f4a790, 10% );
     }
 }

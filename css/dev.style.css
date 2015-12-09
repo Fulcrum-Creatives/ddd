@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/ddd
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.3
+Version: 1.0.4
 Tags: 
 Text Domain: dfw
 License: GNU General Public License v2 or later
@@ -773,7 +773,7 @@ textarea:focus {
 
 .gform_wrapper .gform_footer input.button,
 .gform_wrapper .gform_footer input[type=submit] {
-  background-color: #4e9a7f;
+  background-color: #f4a790;
   outline: none;
   border: none;
   padding: 1em 0;
@@ -789,7 +789,7 @@ textarea:focus {
 .gform_wrapper .gform_footer input[type=submit]:hover {
   -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease;
-  background-color: #3d7863;
+  background-color: #ef8262;
 }
 
 /*---------------------------------------------------------
@@ -805,7 +805,7 @@ textarea:focus {
   text-align: center;
 }
 .button__one a {
-  background-color: #4e9a7f;
+  background-color: #f4a790;
   padding: 1em 0;
   width: 100%;
   color: #231f20;
@@ -817,7 +817,7 @@ textarea:focus {
 .button__one a:hover {
   -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease;
-  background-color: #3d7863;
+  background-color: #ef8262;
 }
 .button__one.centered {
   margin: 3em auto;
