@@ -2,5 +2,54 @@
  * Footer
 ---------------------------------------------------------*/
 .footer {
-  
+  padding: 3em 1em 0;
+  height: 185px;
+  .button__one {
+    margin: 0 auto 3em;
+    float: none;
+    @include media-query(600px) {
+      float: right;
+      margin: 0;
+    }
+  }
+}
+.company_info {
+  width: 207px;
+  float: none;
+  color: #6d6e71;
+  margin: 0 auto 2em;
+  @include font-size(19);
+  @include media-query(600px) {
+    float: left;
+    margin: 0;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  a {
+    color: #6d6e71;
+    text-decoration: none;
+    &:hover {
+      color: darken(#6d6e71, 15%);
+    }
+  }
+  ul {
+    padding: 0;
+    margin-top: 0;
+    list-style-type: none;
+    overflow: hidden;
+    li {
+      float: left;
+      &:first-child {
+        border-right: 1px solid;
+        padding-right: 10px;
+      }
+      &:last-child {
+        padding-left: 10px;
+      }
+      a {
+        padding: 0.5em 0;
+      }
+    }
+  }
 }

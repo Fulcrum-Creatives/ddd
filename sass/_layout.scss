@@ -10,9 +10,10 @@
   background-color: transparent;
 }
 .content__wrapper {
-  max-width: 1200px;
+  max-width: 1265px;
   margin: 0 auto;
   z-index: 1;
+  padding: 0 1em;
 }
 .inner {
   z-index: 2;
@@ -34,7 +35,12 @@
   width: 33.33%;
 }
 .col__1-2 {
-  width: 50%;
+  width: 100%;
+  float: none;
+  @include media-query(768px) {
+    width: 50%;
+    float: left;
+  }
 }
 .col__1-4 {
   width: 25%;

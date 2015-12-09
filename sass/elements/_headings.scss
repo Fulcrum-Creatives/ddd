@@ -8,4 +8,22 @@ h4,
 h5,
 h6 {
   @include font-size($font-size__base);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+  color: $color__header;
+  a {
+    color: $color__header;
+    text-decoration: none;
+    transition: color 1s ease;
+    &:hover {
+      color: darken( $color__header, 10% );
+      transition: color 1s ease;
+    }
+  }
+}
+h2 {
+  @include font-size(40);
+}
+.page__heading {
+  margin: 0;
 }

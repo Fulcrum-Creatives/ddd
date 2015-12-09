@@ -13,9 +13,20 @@ html {
 body {
   margin: 0;
   @include font-size($font-size__base);
-  background-color: #fff;
   color: $color__font;
+  background-color: $light-blue;
+  background-image: url(images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 608px 137px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { 
+  body {
+    background-image: url(images/footer-bg@2.png);
+  }
 }
 .main {
   position: relative;
+  background-color: #fff;
+  padding-bottom: 3em;
 }

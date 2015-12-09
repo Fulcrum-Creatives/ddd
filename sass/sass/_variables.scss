@@ -1,34 +1,20 @@
 // Colors
 //================================================================================
 // text colors
-$color__font: #573917;
-$color__header: #333;
+$color__font: #231f20;
+$color__header: #4e917a;
+$color__link: #4e917a;
+$color__link--hover: darken(#4e917a, 15%);
 
 // color pallete
-$green: #78923b;
-$light_green: #8fb23e;
-$light_green2: #fec931;
-$light_green3: #8cae3d;
-$yellow: #fcbd41;
-$brown: #724c21;
-$light_brown: #c79967;
-$red: #734c22;
-$dark_red: #963923;
-// Header Colors
-$header_green: #5b7132;
-$header_light_green: #7eb43d;
-$header_red: #c35119;
-// Text Shadow
-$text_shadow: 3px 3px 0 rgba(0,0,0,0.3);
-$text_shadow_sm: 2px 2px 0 rgba(0,0,0,0.3);
-$text_shadow_trans: text-shadow 0.5s ease-in-out;
-// Box Shadow
-$box_shadow: 8px 8px 0 0 rgba(0,0,0,0.1);
-$box_shadow_trans: box-shadow 0.5s ease-in-out;
-$box_shadow_opacity: opacity 0.5s ease-in-out;
+$maroon: #4f4c4d;
+$dark-yellow: #4d917b;
+$light-brown: #4e9a7f;
+$dark-grey: #4f4c4d;
+$light-blue: #f3f3f4;
 // Typography
 //================================================================================
-$font-size__base: 16;
+$font-size__base: 17;
 // The default font family.
 $font-family__base: sans-serif !default;
 // Header sizes

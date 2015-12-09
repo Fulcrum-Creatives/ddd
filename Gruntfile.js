@@ -46,7 +46,8 @@ module.exports = function(grunt) {
       main: {
         src: [
           'js/lib/no-conflict.js',
-          'js/lib/skip-navigation.js'
+          'js/lib/skip-navigation.js',
+          'js/lib/svg-support.js'
         ],
         dest: 'js/scripts.js'
       },

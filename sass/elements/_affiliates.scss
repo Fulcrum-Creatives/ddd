@@ -1,0 +1,39 @@
+/*---------------------------------------------------------
+ * Affiliates
+---------------------------------------------------------*/
+.affiliates__header {
+  background-color: #404041;
+  text-align: center;
+  padding: 3em 1em;
+  margin-bottom: 3em;
+  .page__header,
+  .page__heading {
+    margin: 0;
+  }
+  .page__heading {
+    color: #fff;
+  }
+}
+.affiliates {
+  .bene__logo,
+  h4.bene__logo,
+  h4.bene__logo a,
+  h4.bene__logo a picture {
+    width: 292px;
+    height: 63px;
+    overflow: hidden;
+    margin: 0 auto;
+    @include media-query(1024px) {
+      width: 292px;
+      height: 63px;
+    }
+  }
+}
+.affiliation__text {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3em;
+  padding: 0 1em;
+}

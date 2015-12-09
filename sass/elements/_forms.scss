@@ -1,3 +1,38 @@
 /*---------------------------------------------------------
  * Forms
 ---------------------------------------------------------*/
+.gform_wrapper .top_label .gfield_label {
+  margin: .625em 0 0 !important;
+}
+.gform_wrapper input[type=email], 
+.gform_wrapper input[type=number], 
+.gform_wrapper input[type=password], 
+.gform_wrapper input[type=tel], 
+.gform_wrapper input[type=text], 
+.gform_wrapper input[type=url],
+textarea {
+  border: 2px solid $light_blue;
+  background-color: $light_blue;
+  outline: none;
+  padding: 1em !important;
+  &:focus {
+    background-color: #fff;
+  }
+}
+.gform_wrapper .gform_footer input.button, 
+.gform_wrapper .gform_footer input[type=submit] {
+    background-color: $light-brown;
+    outline: none;
+    border: none;
+    padding: 1em 0;
+    font-size: 19px !important;
+    display: block;
+    width: 288px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 1s ease;
+    &:hover {
+      transition: background-color 1s ease;
+      background-color: darken( $light-brown, 10% );
+    }
+}

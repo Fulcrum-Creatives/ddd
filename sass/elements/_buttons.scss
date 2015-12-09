@@ -1,0 +1,33 @@
+/*---------------------------------------------------------
+ * Buttons
+---------------------------------------------------------*/
+.button__one {
+  @include font-size(19);
+  margin: 3em 0;
+  display: block;
+  width: 288px;
+  font-weight: bold;
+  text-align: center;
+  a {
+    background-color: $light-brown;
+    padding: 1em 0;
+    width: 100%;
+    color: $color__font;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 1s ease;
+    &:hover {
+      transition: background-color 1s ease;
+      background-color: darken( $light-brown, 10% );
+    }
+  }
+  &.centered {
+    margin: 3em auto;
+  }
+  &.right {
+    float: right;
+  }
+  &.left {
+    float: left;
+  }
+}

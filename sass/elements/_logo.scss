@@ -1,0 +1,34 @@
+/*---------------------------------------------------------
+ * Logo
+---------------------------------------------------------*/
+.header__logo,
+.header__logo h1,
+.header__logo h1 a,
+.header__logo h1 a picture {
+  width: 187px;
+  height: 129px;
+  overflow: hidden;
+  @include media-query(1024px) {
+    width: 279px;
+    height: 194px;
+  }
+}
+.header__logo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float: left;
+  .st0 {
+    fill: #fff;
+  }
+  .st1 {
+    fill: #f4a790;
+  }
+}
+.header__logo h1 {
+  padding: 0;
+  margin: 0;
+}
+.header__logo h1 a {
+  display: block;
+}

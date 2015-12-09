@@ -44,7 +44,8 @@ if( !function_exists( 'fcwp_theme_support' ) ) :
 	    add_image_size( 'mobile', 480, 9999 );
 	    // Register Nav Menus*/
 	    register_nav_menus( array(
-	        'primary' => __( 'Primary', 'dfw' )
+	   		'primary' => __( 'Primary', 'dfw' ),
+	    ) );
 	}
 	add_action( 'after_setup_theme', 'fcwp_theme_support' );
 endif;
@@ -186,3 +187,10 @@ function remove_jquery_migrate( &$scripts ){
       $scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
   }
 }
+
+/*---------------------------------------------------------
+ * Add Mime Type
+---------------------------------------------------------*/
+if( function_exists( 'dfw_add_mime_types' ) ) :
+	dfw_add_mime_types( array( 'svg' => 'image/svg+xml' ) ); 
+endif;

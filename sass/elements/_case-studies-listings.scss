@@ -1,0 +1,57 @@
+/*---------------------------------------------------------
+ * Case Studies Listings
+---------------------------------------------------------*/
+.case-studies {
+  .page__header {
+    text-align: center;
+  }
+}
+.case_study.listing {
+  margin-bottom: 1em;
+  padding: 1em 0;
+  background-color: $light-blue;
+  .entry__heading {
+    @include font-size(35);
+    color: $color__font;
+    a {
+      color: $color__font;
+      &:hover {
+        color: lighten( $color__font, 10% );
+      }
+    }
+  }
+  .entry__content {
+    float: left;
+    padding-right: 0;
+  }
+  .entry__profile-image {
+    float: right;
+    padding-left: 0;
+  }
+  &.even {
+    .entry__content {
+      float: right;
+      padding-left:0;
+    }
+    .entry__profile-image {
+      float: left;
+      padding-right: 0;
+    }
+  }
+  @include media-query(768px) {
+    .entry__content {
+      padding-right: 2em;
+    }
+    .entry__profile-image {
+      padding-left: 2em
+    }
+    &.even {
+      .entry__content {
+        padding-left: 2em;
+      }
+      .entry__profile-image {
+        padding-right: 2em
+      }
+    }
+  }
+}
