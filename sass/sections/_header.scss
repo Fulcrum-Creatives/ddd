@@ -3,14 +3,8 @@
 ---------------------------------------------------------*/
 .header {
   height: 170px;
-  background-color: $light-brown;
-  background-image: url(images/header-bg-sub.png);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 321px 170px;
   @include media-query(1024px) {
     height: 400px;
-    background-size: 755px 400px;
   }
   .content__wrapper {
     transform-style: preserve-3d;
@@ -37,27 +31,33 @@
     }
   }
 }
+.header {
+  background-color: $dark-grey;
+  background-image: url(images/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 321px 170px;
+  @include media-query(1024px) {
+    background-size: 755px 400px;
+  }
+}
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { 
   .header {
+    background-image: url(images/header-bg@2.png);
+  }
+}
+.header__green {
+  background-color: $light-brown;
+  background-image: url(images/header-bg-sub.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 321px 170px;
+  @include media-query(1024px) {
+    background-size: 755px 400px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { 
+  .header__green {
     background-image: url(images/header-bg-sub@2.png);
-  }
-}
-.home {
-  .header {
-    background-color: $dark-grey;
-    background-image: url(images/header-bg.png);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 321px 170px;
-    @include media-query(1024px) {
-      background-size: 755px 400px;
-    }
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { 
-  .home {
-    .header {
-      background-image: url(images/header-bg@2.png);
-    }
   }
 }
