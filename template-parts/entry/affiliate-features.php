@@ -17,7 +17,7 @@ if ( have_posts() ) :
     </section>
     <section class="affiliates">
       <h4 class="bene__logo">
-        <a href="<?php echo home_url(); ?>">
+        <a href="http://benefactorgroup.com/">
           <?php
             $bene_logo_paths = array(
               'image'  => $ddd_affiliate_logo['url'],
