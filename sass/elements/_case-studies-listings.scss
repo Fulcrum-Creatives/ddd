@@ -1,12 +1,17 @@
 /*---------------------------------------------------------
  * Case Studies Listings
 ---------------------------------------------------------*/
-.case-studies {
+.case-studies,
+.news {
   .page__header {
     text-align: center;
   }
 }
-.case_study.listing {
+.news {
+  margin-top: 4em;
+}
+.case_study.listing,
+.news.listing {
   margin-bottom: 1em;
   padding: 1em 0;
   background-color: $light-blue;

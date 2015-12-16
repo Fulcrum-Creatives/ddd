@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/ddd
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.7
+Version: 1.0.8
 Tags: 
 Text Domain: dfw
 License: GNU General Public License v2 or later
@@ -548,13 +548,15 @@ h2 {
 }
 .menu ul li {
   float: left;
+  padding: 0 10px;
+  border-right: 1px solid;
 }
 .menu ul li:first-child {
-  border-right: 1px solid;
-  padding-right: 10px;
+  padding-left: 0;
 }
 .menu ul li:last-child {
-  padding-left: 10px;
+  padding-right: 0;
+  border-right: none;
 }
 .menu ul li a {
   color: #231f20;
@@ -649,53 +651,70 @@ h2 {
 /*---------------------------------------------------------
  * Case Studies Listings
 ---------------------------------------------------------*/
-.case-studies .page__header {
+.case-studies .page__header,
+.news .page__header {
   text-align: center;
 }
 
-.case_study.listing {
+.news {
+  margin-top: 4em;
+}
+
+.case_study.listing,
+.news.listing {
   margin-bottom: 1em;
   padding: 1em 0;
   background-color: #f3f3f4;
 }
-.case_study.listing .entry__heading {
+.case_study.listing .entry__heading,
+.news.listing .entry__heading {
   font-size: 35px;
   font-size: 2.05882em;
   color: #231f20;
 }
-.case_study.listing .entry__heading a {
+.case_study.listing .entry__heading a,
+.news.listing .entry__heading a {
   color: #231f20;
 }
-.case_study.listing .entry__heading a:hover {
+.case_study.listing .entry__heading a:hover,
+.news.listing .entry__heading a:hover {
   color: #3e3739;
 }
-.case_study.listing .entry__content {
+.case_study.listing .entry__content,
+.news.listing .entry__content {
   float: left;
   padding-right: 0;
 }
-.case_study.listing .entry__profile-image {
+.case_study.listing .entry__profile-image,
+.news.listing .entry__profile-image {
   float: right;
   padding-left: 0;
 }
-.case_study.listing.even .entry__content {
+.case_study.listing.even .entry__content,
+.news.listing.even .entry__content {
   float: right;
   padding-left: 0;
 }
-.case_study.listing.even .entry__profile-image {
+.case_study.listing.even .entry__profile-image,
+.news.listing.even .entry__profile-image {
   float: left;
   padding-right: 0;
 }
 @media screen and (min-width: 768px) {
-  .case_study.listing .entry__content {
+  .case_study.listing .entry__content,
+  .news.listing .entry__content {
     padding-right: 2em;
   }
-  .case_study.listing .entry__profile-image {
+  .case_study.listing .entry__profile-image,
+  .news.listing .entry__profile-image {
     padding-left: 2em;
   }
-  .case_study.listing.even .entry__content {
+  .case_study.listing.even .entry__content,
+  .news.listing.even .entry__content {
     padding-left: 2em;
   }
-  .case_study.listing.even .entry__profile-image {
+  .case_study.listing.even .entry__profile-image,
+  .news.listing.even .entry__profile-image {
     padding-right: 2em;
   }
 }
@@ -929,7 +948,7 @@ textarea:focus {
 }
 
 .company_info {
-  width: 207px;
+  width: 270px;
   float: none;
   color: #6d6e71;
   margin: 0 auto 2em;
@@ -960,13 +979,15 @@ textarea:focus {
 }
 .company_info ul li {
   float: left;
+  padding: 0 10px;
+  border-right: 1px solid;
 }
 .company_info ul li:first-child {
-  border-right: 1px solid;
-  padding-right: 10px;
+  padding-left: 0;
 }
 .company_info ul li:last-child {
-  padding-left: 10px;
+  padding-right: 0;
+  border-right: none;
 }
 .company_info ul li a {
   padding: 0.5em 0;

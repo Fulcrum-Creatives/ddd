@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Case Studies
+Template Name: News
 */
 get_header();
 ?>
@@ -9,7 +9,7 @@ get_header();
   <?php 
   if( function_exists( 'dfw_page_title' ) ) : dfw_page_title(); endif;
   $case_study_query = new WP_Query( array(
-    'post_type' => 'casestudies',
+    'post_type' => 'post',
     'paged'     => $paged
   ) );
   $paged     = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -30,6 +30,7 @@ get_header();
           </section>
           <section class="entry__content col__1-2">
             <?php if( function_exists( 'dfw_entry_title' ) ) : dfw_entry_title(); endif; ?>
+            <div class="entry__date"><?php echo get_the_date(); ?></div>
             <?php dfw_custom_excerpt(); ?>
           </section>
         </div>

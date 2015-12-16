@@ -22,6 +22,11 @@
             <?php echo _e( 'Case Studies', 'fcwp' ); ?>
           </a>
         </li>
+        <li>
+          <a href="<?php echo home_url(); ?>/the-news/">
+            <?php echo _e( 'News', 'fcwp' ); ?>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
