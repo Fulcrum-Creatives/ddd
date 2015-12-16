@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/ddd
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.9
+Version: 1.0.10
 Tags: 
 Text Domain: dfw
 License: GNU General Public License v2 or later
@@ -666,62 +666,84 @@ h2 {
 }
 
 .case_study.listing,
-.news.listing {
+.news.listing,
+.single {
   margin-bottom: 1em;
   padding: 1em 0;
   background-color: #f3f3f4;
 }
 .case_study.listing .entry__heading,
-.news.listing .entry__heading {
+.news.listing .entry__heading,
+.single .entry__heading {
   font-size: 35px;
   font-size: 2.05882em;
   color: #231f20;
 }
 .case_study.listing .entry__heading a,
-.news.listing .entry__heading a {
+.news.listing .entry__heading a,
+.single .entry__heading a {
   color: #231f20;
 }
 .case_study.listing .entry__heading a:hover,
-.news.listing .entry__heading a:hover {
+.news.listing .entry__heading a:hover,
+.single .entry__heading a:hover {
   color: #3e3739;
 }
+.case_study.listing .entry__date,
+.news.listing .entry__date,
+.single .entry__date {
+  margin-bottom: 01em;
+  margin-top: -1em;
+}
 .case_study.listing .entry__content,
-.news.listing .entry__content {
+.news.listing .entry__content,
+.single .entry__content {
   float: left;
   padding-right: 0;
 }
 .case_study.listing .entry__profile-image,
-.news.listing .entry__profile-image {
+.news.listing .entry__profile-image,
+.single .entry__profile-image {
   float: right;
   padding-left: 0;
 }
 .case_study.listing.even .entry__content,
-.news.listing.even .entry__content {
+.news.listing.even .entry__content,
+.single.even .entry__content {
   float: right;
   padding-left: 0;
 }
 .case_study.listing.even .entry__profile-image,
-.news.listing.even .entry__profile-image {
+.news.listing.even .entry__profile-image,
+.single.even .entry__profile-image {
   float: left;
   padding-right: 0;
 }
 @media screen and (min-width: 768px) {
   .case_study.listing .entry__content,
-  .news.listing .entry__content {
+  .news.listing .entry__content,
+  .single .entry__content {
     padding-right: 2em;
   }
   .case_study.listing .entry__profile-image,
-  .news.listing .entry__profile-image {
+  .news.listing .entry__profile-image,
+  .single .entry__profile-image {
     padding-left: 2em;
   }
   .case_study.listing.even .entry__content,
-  .news.listing.even .entry__content {
+  .news.listing.even .entry__content,
+  .single.even .entry__content {
     padding-left: 2em;
   }
   .case_study.listing.even .entry__profile-image,
-  .news.listing.even .entry__profile-image {
+  .news.listing.even .entry__profile-image,
+  .single.even .entry__profile-image {
     padding-right: 2em;
   }
+}
+
+.single .entry__heading {
+  color: #4e917a;
 }
 
 /*---------------------------------------------------------
