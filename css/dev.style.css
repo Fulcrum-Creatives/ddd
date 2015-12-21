@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/ddd
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.15
+Version: 1.0.16
 Tags: 
 Text Domain: dfw
 License: GNU General Public License v2 or later
@@ -1079,7 +1079,7 @@ a img.aligncenter {
 
 .wp-caption-text {
   text-align: left;
-  padding: 2em 0 0.5em 0;
+  padding: 1.5em 0 0.5em 1.5em;
   font-size: 14px;
   font-size: 0.82353em;
 }
