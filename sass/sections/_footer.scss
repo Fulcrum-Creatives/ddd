@@ -7,19 +7,19 @@
   .button__one {
     margin: 0 auto 3em;
     float: none;
-    @include media-query(600px) {
+    @include media-query(650px) {
       float: right;
       margin: 0;
     }
   }
 }
 .company_info {
-  width: 270px;
+  max-width: 320px;
   float: none;
   color: #6d6e71;
   margin: 0 auto 2em;
   @include font-size(19);
-  @include media-query(600px) {
+  @include media-query(650px) {
     float: left;
     margin: 0;
   }

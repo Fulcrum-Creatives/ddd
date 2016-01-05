@@ -1,7 +1,7 @@
 <?php get_template_part( 'template-parts/head' ); ?>
 <?php 
 $green = '';
-if( is_page('case-studies') || is_single() ) :
+if( is_page( 'case-studies' ) || get_post_type() == 'casestudies' ) :
   $green = ' header__green';
 endif;
 ?>
