@@ -23,11 +23,13 @@ endif;
       ?>
       <article id="entry-<?php get_the_ID(); ?>" <?php post_class('row entry news listing ' . $even_odd ); ?> aria-labelledby="entry__header" role="article">
         <div class="content__wrapper">
+          <?php if ( has_post_thumbnail() ) : ?>
           <section class="entry__profile-image col__1-2">
             <a href="<?php the_permalink(); ?>">
               <?php get_template_part( 'template-parts/partials/thumbnail' ); ?>
             </a>
           </section>
+          <?php endif; ?>
           <section class="entry__content col__1-2">
             <?php if( function_exists( 'dfw_entry_title' ) ) : dfw_entry_title(); endif; ?>
             <div class="entry__date"><?php echo get_the_date(); ?></div>
