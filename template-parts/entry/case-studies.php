@@ -13,8 +13,9 @@ endif;
     dfw_page_title( 'Case Studies', $title_args ); 
   endif;
   $case_study_query = new WP_Query( array(
-    'post_type'     => 'casestudies',
-    'no_found_rows' => true
+    'post_type'      => 'casestudies',
+    'posts_per_page' => '3',
+    'no_found_rows'  => true
   ) );
   if( have_posts() ) : 
     while( $case_study_query->have_posts() ) : 
