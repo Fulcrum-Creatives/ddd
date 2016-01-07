@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/ddd
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.21
+Version: 1.0.22
 Tags: 
 Text Domain: dfw
 License: GNU General Public License v2 or later
@@ -724,22 +724,22 @@ h2 {
   .case_study.listing .entry__content,
   .news.listing .entry__content,
   .single .entry__content .entry__content {
-    padding-right: 2em;
+    padding-left: 2em;
   }
   .case_study.listing .entry__profile-image,
   .news.listing .entry__profile-image,
   .single .entry__content .entry__profile-image {
-    padding-left: 2em;
+    padding-right: 2em;
   }
   .case_study.listing.even .entry__content,
   .news.listing.even .entry__content,
   .single .entry__content.even .entry__content {
-    padding-left: 2em;
+    padding-right: 2em;
   }
   .case_study.listing.even .entry__profile-image,
   .news.listing.even .entry__profile-image,
   .single .entry__content.even .entry__profile-image {
-    padding-right: 2em;
+    padding-left: 2em;
   }
 }
 

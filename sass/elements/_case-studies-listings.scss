@@ -50,17 +50,17 @@
   }
   @include media-query(768px) {
     .entry__content {
-      padding-right: 2em;
+      padding-left: 2em;
     }
     .entry__profile-image {
-      padding-left: 2em
+      padding-right: 2em
     }
     &.even {
       .entry__content {
-        padding-left: 2em;
+        padding-right: 2em;
       }
       .entry__profile-image {
-        padding-right: 2em
+        padding-left: 2em
       }
     }
   }
