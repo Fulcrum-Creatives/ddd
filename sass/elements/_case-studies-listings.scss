@@ -31,21 +31,21 @@
     margin-top: -1em;
   }
   .entry__content {
-    float: left;
-    padding-right: 0;
-  }
-  .entry__profile-image {
     float: right;
     padding-left: 0;
   }
+  .entry__profile-image {
+    float: left;
+    padding-right: 0;
+  }
   &.even {
     .entry__content {
-      float: right;
-      padding-left:0;
+      float: left;
+      padding-right:0;
     }
     .entry__profile-image {
-      float: left;
-      padding-right: 0;
+      float: right;
+      padding-left: 0;
     }
   }
   @include media-query(768px) {
