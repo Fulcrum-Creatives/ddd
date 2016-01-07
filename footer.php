@@ -9,7 +9,7 @@
     </div>
     <?php endif; ?>
     <div class="company_info">
-      <p><?php echo date('Y'); ?>&copy; <?php echo _e( 'Diana Duke Duncan LLC', 'fcwp' ); ?></p>
+      <p>&copy; <?php echo date('Y'); ?> <?php echo _e( 'Diana Duke Duncan LLC', 'fcwp' ); ?></p>
       <!-- two links no need for a menu -->
       <ul>
         <li>
