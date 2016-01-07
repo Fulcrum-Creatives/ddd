@@ -127,9 +127,9 @@ endif;
 if( !function_exists( 'fcwp_load_stylesheets' ) ) :
 	function fcwp_load_stylesheets() {
 		// Load the main stylesheet.
-		wp_enqueue_style( 'fcwp-style', FCWP_STYLESHEETURI, array(), '1.0.0', 'all' );
+		wp_enqueue_style( 'fcwp-style', FCWP_STYLESHEETURI, array(), FCWP_VERSION, 'all' );
 		// Load the Internet Explorer 9 specific stylesheet.
-		wp_enqueue_style( 'fcwp-ie9-style', FCWP_URI . '/css/ie9.style.css', array( 'fcwp-style' ), '1.0.0' );
+		wp_enqueue_style( 'fcwp-ie9-style', FCWP_URI . '/css/ie9.style.css', array( 'fcwp-style' ), FCWP_VERSION );
 		wp_style_add_data( 'fcwp-ie9-style', 'conditional', 'IE 9' );
 	}
 	add_action( 'wp_enqueue_scripts', 'fcwp_load_stylesheets' );
