@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/ddd
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.29
+Version: 1.0.30
 Tags: 
 Text Domain: dfw
 License: GNU General Public License v2 or later
@@ -534,6 +534,7 @@ h2 {
 
 .page__heading {
   margin-bottom: 1.5em;
+  font-weight: bold;
 }
 
 .menu {
