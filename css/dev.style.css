@@ -768,6 +768,9 @@ h2 {
 .affiliates__header .page__heading {
   color: #fff;
 }
+.affiliates__header .page__heading a {
+  color: #fff;
+}
 
 .affiliates .bene__logo,
 .affiliates h4.bene__logo,

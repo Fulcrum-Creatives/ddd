@@ -8,13 +8,15 @@ if( is_home() || is_front_page() ) :
 endif;
 ?>
 <section class="case-studies">
+  <?php if( function_exists( 'dfw_page_title' ) ) : ?>
+    <section class="affiliates__header">
+      <?php dfw_page_title( 'Featured Case Study', $title_args ); ?>
+    </section>
   <?php 
-  if( function_exists( 'dfw_page_title' ) ) : 
-    dfw_page_title( 'Case Studies', $title_args ); 
   endif;
   $case_study_query = new WP_Query( array(
     'post_type'      => 'casestudies',
-    'posts_per_page' => '3',
+    'posts_per_page' => '1',
     'no_found_rows'  => true
   ) );
   if( have_posts() ) : 
