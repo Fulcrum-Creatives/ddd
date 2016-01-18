@@ -6,11 +6,11 @@
 .header__logo h1 a,
 .header__logo h1 a picture {
   width: 187px;
-  height: 129px;
+  height: 132px;
   overflow: hidden;
   @include media-query(1024px) {
     width: 279px;
-    height: 194px;
+    height: 196px;
   }
 }
 .header__logo {
