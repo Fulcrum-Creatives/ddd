@@ -12,5 +12,6 @@ $ddd_cs_subtitle_two  = dfw_get_field( 'ddd_cs_subtitle_two' );
     <?php if( function_exists( 'dfw_entry_title' ) ) : dfw_entry_title( array( 'has_link' => false )); endif; ?>
     <div class="entry__date"><?php echo get_the_date(); ?></div>
   <?php endif; ?>
+  <?php get_template_part( 'template-parts/partials/thumbnail' ); ?>
   <?php the_content(); ?>
 </div>
