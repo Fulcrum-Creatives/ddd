@@ -148,3 +148,19 @@
 .ellipsis__link-class {
   font-weight: bold;
 }
+.section__header {
+  background-color: #404041;
+  text-align: center;
+  padding: 3em 1em;
+  margin-bottom: 4em;
+  .page__header,
+  .page__heading {
+    margin: 0;
+  }
+  .page__heading {
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
+}
