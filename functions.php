@@ -180,17 +180,28 @@ add_action( 'widgets_init', 'fcwp_register_custom_sidebars' );
 /*---------------------------------------------------------
  * Remove jQuery Migrate from Fronend
 ---------------------------------------------------------*/
-add_filter( 'wp_default_scripts', 'remove_jquery_migrate' );
-function remove_jquery_migrate( &$scripts ){
-  if( !is_admin() ){
-      $scripts->remove( 'jquery');
-      $scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
-  }
-}
+if( !function_exists( 'fcwp_remove_jquery_migrate' ) ) :
+	function fcwp_remove_jquery_migrate( &$scripts ){
+	  if( !is_admin() ){
+	      $scripts->remove( 'jquery');
+	      $scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
+	  }
+	}
+	add_filter( 'wp_default_scripts', 'fcwp_remove_jquery_migrate' );
+endif;
 
 /*---------------------------------------------------------
- * Add Mime Type
+ * Move Metabox
 ---------------------------------------------------------*/
-if( function_exists( 'dfw_add_mime_types' ) ) :
-	dfw_add_mime_types( array( 'svg' => 'image/svg+xml' ) ); 
+add_filter( 'wpseo_metabox_prio', function() { return 'low'; });
+
+/**--------------------------------------------------------
+ * Heading Bar
+ *---------------------------------------------------------*/
+if( !function_exists( 'fcwp_heading_bar' ) ) :
+	function fcwp_heading_bar( $text, $url = ''  ) {
+		$url = ( $url != '' ? '<a href="' . $url . '"></a>' : '' );
+		$html = '<section class="heading-bar">' . $url . '<h2 class="heading-bar__heading">' . $text . '</h2></section>';
+		return $html;
+	}
 endif;

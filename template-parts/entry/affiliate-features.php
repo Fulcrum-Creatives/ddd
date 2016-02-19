@@ -7,14 +7,8 @@ if ( have_posts() ) :
     $ddd_affiliate_logo_svg    = dfw_get_field( 'ddd_affiliate_logo_svg', true );
     $ddd_affiliate_header      = dfw_get_field( 'ddd_affiliate_header' );
     $ddd_affiliate_copy        = dfw_get_field( 'ddd_affiliate_copy' );
+    echo fcwp_heading_bar( $ddd_affiliate_header  );
     ?>
-    <section class="affiliates__header">
-      <?php 
-      if( function_exists( 'dfw_page_title' ) ) : 
-        dfw_page_title( $ddd_affiliate_header ); 
-      endif;
-      ?>
-    </section>
     <section class="affiliates">
       <h4 class="bene__logo">
         <a href="http://benefactorgroup.com/">

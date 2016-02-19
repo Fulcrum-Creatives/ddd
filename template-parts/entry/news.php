@@ -1,23 +1,19 @@
 <?php
-$title_args = array();
-if (is_home() || is_front_page()):
-    $title_args = array(
-        'has_link' => true,
-        'link_url' => home_url() . '/the-news/',
-    );
+if ( have_posts() ) : 
+  while ( have_posts() ) : 
+    the_post();
+    $ddd_featured_news_heading   = dfw_get_field( 'ddd_featured_news_heading' );
+    $ddd_featured_news_link      = dfw_get_field( 'ddd_featured_news_link' );
+    $ddd_choose_featured_article = dfw_get_field( 'ddd_choose_featured_article' );
+  endwhile;  
 endif;
-?>
-<section class="news">
-  <?php if (function_exists('dfw_page_title')): ?>
-    <section class="section__header">
-      <?php dfw_page_title('Featured Article', $title_args);?>
-    </section>
-  <?php
-endif;
+wp_reset_postdata();
+echo fcwp_heading_bar( $ddd_featured_news_heading, $ddd_featured_news_link );
 $case_study_query = new WP_Query(array(
-    'post_type' => 'post',
+    'post_type'      => 'post',
     'posts_per_page' => '1',
-    'no_found_rows' => true,
+    'post__in'       => array( $ddd_choose_featured_article->ID ),
+    'no_found_rows'  => true,
 ));
 if (have_posts()):
     while ($case_study_query->have_posts()):

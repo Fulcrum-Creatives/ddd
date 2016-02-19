@@ -7,7 +7,7 @@
   }
   .entry__content {
     padding-right: 0;
-    @include media-query(768px) {
+    @include media-query(769px) {
       padding-right: 7em;
     }
   }
@@ -20,7 +20,7 @@
 }
 .entry__profile-image {
   margin-bottom: 0em;
-  @include media-query(768px) {
+  @include media-query(769px) {
     margin-bottom: 0;
   }
   img {
@@ -83,7 +83,7 @@
   .page__header {
     margin: 2em 0;
     text-align: center;
-    @include media-query(1024px) {
+    @include media-query(1025px) {
       margin: 2em 0 4em;
     }
   }

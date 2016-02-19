@@ -1,23 +1,19 @@
 <?php
-$title_args = array();
-if (is_home() || is_front_page()):
-    $title_args = array(
-        'has_link' => true,
-        'link_url' => home_url() . '/case-studies/',
-    );
+if ( have_posts() ) : 
+  while ( have_posts() ) : 
+    the_post();
+    $ddd_btn_case_studies           = dfw_get_field( 'ddd_btn_case_studies' );
+    $ddd_btn_case_studies_link      = dfw_get_field( 'ddd_btn_case_studies_link' );
+    $ddd_choose_featured_case_study = dfw_get_field( 'ddd_choose_featured_case_study' );
+  endwhile;  
 endif;
-?>
-<section class="case-studies">
-  <?php if (function_exists('dfw_page_title')): ?>
-    <section class="section__header">
-      <?php dfw_page_title('Featured Case Study', $title_args);?>
-    </section>
-  <?php
-endif;
+wp_reset_postdata();
+echo fcwp_heading_bar( $ddd_btn_case_studies, $ddd_btn_case_studies_link );
 $case_study_query = new WP_Query(array(
-    'post_type' => 'casestudies',
+    'post_type'      => 'casestudies',
     'posts_per_page' => '1',
-    'no_found_rows' => true,
+    'post__in'        => array( $ddd_choose_featured_case_study->ID ),
+    'no_found_rows'  => true,
 ));
 if (have_posts()):
     while ($case_study_query->have_posts()):
