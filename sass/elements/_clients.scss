@@ -22,6 +22,7 @@
   float: left;
 }
 .client__logo {
+  position: absolute;
   img {
     width: 18px;
     height: 18px;
@@ -29,7 +30,7 @@
 }
 .client__name {
   @include font-size(18);
-  padding-left: 1em;
+  padding-left: 2em;
   a {
     text-decoration: none;
     color: #231f20;
