@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/ddd
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.3.2
+Version: 1.3.1
 Tags: 
 Text Domain: dfw
 License: GNU General Public License v2 or later
@@ -984,21 +984,7 @@ textarea:focus {
   margin-bottom: 1em;
 }
 .client .inner {
-  background-color: #f3f3f4;
   padding: 1em;
-}
-
-.client__logo,
-.client__name {
-  float: left;
-}
-
-.client__logo {
-  position: absolute;
-}
-.client__logo img {
-  width: 18px;
-  height: 18px;
 }
 
 .client__name {
