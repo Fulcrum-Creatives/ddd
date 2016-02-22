@@ -29,11 +29,6 @@ echo fcwp_heading_bar( $ddd_clients_heading );
                 </a>
               <?php endif; ?>
             </div>
-            <div class="client__name">
-              <a href="<?php echo $ddd_client_url; ?>">
-                <?php echo $ddd_client_name; ?>
-              </a>
-            </div>
           </div>
         </div>
       <?php 
