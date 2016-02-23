@@ -7,13 +7,27 @@
   padding: 0 1em;
   .row {
     margin-bottom: 2em;
+    display: table;
   }
 }
 .client {
   padding: 0 0.5em;
   margin-bottom: 1em;
+  display: block;
+  height: auto;
+  @include media-query(769px) {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+  }
   .inner {
     padding: 1em;
+  }
+}
+.client__logo {
+  text-align: center;
+  @include media-query(769px) {
+    text-align: left;
   }
 }
 .client__name {
