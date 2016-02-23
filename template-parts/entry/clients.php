@@ -11,12 +11,11 @@ echo fcwp_heading_bar( $ddd_clients_heading );
 <section class="clients">
   <?php 
   if( have_rows( 'ddd_clients' ) ):
-    $i=0;
+    $i = 0;
     while( have_rows( 'ddd_clients' ) ) : the_row();
       $ddd_client_logo = dfw_get_sub_field( 'ddd_clients', 'ddd_client_logo' );
-      $ddd_client_name = dfw_get_sub_field( 'ddd_clients', 'ddd_client_name' );
-      $ddd_client_url  = dfw_get_sub_field( 'ddd_clients', 'ddd_client_url ' );
-      if( $i%3==0 ) :
+      $ddd_client_url  = dfw_get_sub_field( 'ddd_clients', 'ddd_client_url' );
+      if( $i%3 == 0 ) :
       ?>
       <div class="row">
       <?php endif; ?>
@@ -33,12 +32,12 @@ echo fcwp_heading_bar( $ddd_clients_heading );
         </div>
       <?php 
       $i++;
-      if($i%3==0) : ?>
+      if($i%3 == 0) : ?>
       </div>
       <?php endif; ?>      
     <?php
     endwhile;
-    if($i%3!=0) : ?>
+    if($i%3 != 0) : ?>
       </div>
     <?php
     endif;
