@@ -6,8 +6,11 @@
   margin: 0 auto;
   padding: 0 1em;
   .row {
-    margin-bottom: 2em;
+    margin-bottom: 0;
     display: table;
+    @include media-query(769px) {
+      margin-bottom: 2em;
+    }
   }
 }
 .client {
@@ -15,9 +18,9 @@
   margin-bottom: 1em;
   display: block;
   height: auto;
+  float: none;
   @include media-query(769px) {
     display: table-cell;
-    height: 100%;
     vertical-align: middle;
   }
   .inner {
@@ -26,9 +29,6 @@
 }
 .client__logo {
   text-align: center;
-  @include media-query(769px) {
-    text-align: left;
-  }
 }
 .client__name {
   @include font-size(18);
